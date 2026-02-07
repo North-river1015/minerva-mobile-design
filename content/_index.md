@@ -4,30 +4,32 @@ layout: "home"
 ---
 
 
+
 <style>
-  /* 1. 外枠：ここを「画面幅ぴったり」にして、はみ出しを強制カット */
   .mobile-only-map {
-    width: 100% !important;
-    max-width: 100vw !important;
-    overflow-x: hidden !important; /* 横方向のはみ出しを物理的に切り捨てる */
-    margin: 0 !important;
-    padding: 0 !important;
-    position: relative;
-    touch-action: pan-y; /* 縦スクロールのみに限定 */
+    width: 100%;
+    /* 高さを強制的に制限して、下のコンテンツを押し上げます */
+    max-height: 450px; 
+    overflow: hidden;
+    margin-top: -20px; /* メニューとの隙間を詰める */
+    margin-bottom: -50px; /* 下の見出しとの隙間を詰める */
+    background-color: #ffffff;
   }
 
-  /* 2. 地図本体：画面幅からはみ出さないよう強制固定 */
   .geolonia-svg-map {
-    width: 100% !important;
-    height: auto !important;
+    width: 100%;
+    /* viewBoxで設定した比率を無視して、枠に合わせる設定 */
+    height: auto;
     display: block;
-    /* 地図が右に寄らないよう、左端に固定 */
-    margin-left: 0 !important; 
   }
-
-  .geolonia-svg-map .prefecture { fill: #EEEEEE; stroke: #444444; stroke-width: 0.5; }
-  .geolonia-svg-map .prefecture:hover { fill: #00ff99 !important; }
 </style>
+
+<div class="mobile-only-map">
+  <svg class="geolonia-svg-map" viewBox="320 180 430 500" xmlns="http://www.w3.org/2000/svg">
+    <g class="svg-map">
+       </g>
+  </svg>
+</div>
 
 
 
