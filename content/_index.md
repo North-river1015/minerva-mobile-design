@@ -3,20 +3,28 @@ title: "Minerva"
 layout: "home"
 ---
 
+
 <style>
+  /* 1. 外枠：ここを「画面幅ぴったり」にして、はみ出しを強制カット */
   .mobile-only-map {
-    width: 100%;
-    overflow: hidden; /* 枠外を完全にカット */
-    margin: 0;
-    padding: 0;
-    touch-action: pan-y; /* 横揺れ防止 */
+    width: 100% !important;
+    max-width: 100vw !important;
+    overflow-x: hidden !important; /* 横方向のはみ出しを物理的に切り捨てる */
+    margin: 0 !important;
+    padding: 0 !important;
+    position: relative;
+    touch-action: pan-y; /* 縦スクロールのみに限定 */
   }
+
+  /* 2. 地図本体：画面幅からはみ出さないよう強制固定 */
   .geolonia-svg-map {
-    width: 100%; /* 画面幅いっぱいに広げる */
-    height: auto;
+    width: 100% !important;
+    height: auto !important;
     display: block;
+    /* 地図が右に寄らないよう、左端に固定 */
+    margin-left: 0 !important; 
   }
-  /* 地図の色など */
+
   .geolonia-svg-map .prefecture { fill: #EEEEEE; stroke: #444444; stroke-width: 0.5; }
   .geolonia-svg-map .prefecture:hover { fill: #00ff99 !important; }
 </style>
