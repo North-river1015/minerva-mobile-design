@@ -3,48 +3,29 @@ title: "Minerva"
 layout: "home"
 ---
 
-
-
 <style>
-  /* 地図を包む外枠：画面からはみ出るのを防ぎ、横スクロールを禁止する */
+  /* 外枠：はみ出しを完全にカットし、横揺れを防止 */
   .mobile-only-map {
     width: 100%;
     overflow: hidden;
+    margin: 0;
+    padding: 0;
     background-color: #ffffff;
-    padding: 10px 0;
+    /* 横スワイプを禁止し、縦スクロールのみ許可する（モバイル対策） */
+    touch-action: pan-y;
   }
 
-  /* 地図本体：親要素（スマホ画面）の幅に合わせて自動リサイズ */
+  /* 地図本体：親要素の幅100%に強制的に合わせる */
   .geolonia-svg-map {
-    max-width: 100%;
+    width: 100%;
     height: auto;
     display: block;
-    margin: 0 auto; /* 画面中央に配置 */
-  }
-
-  /* 地図のデザイン（色や境界線） */
-  .geolonia-svg-map .prefecture polygon, 
-  .geolonia-svg-map .prefecture path { 
-    fill: #EEEEEE; 
-    stroke: #444444; 
-    stroke-width: 0.5; 
-    transition: fill .2s; 
-  } 
-
-  /* ホバー時の色（マウスをのせた時やタップした時） */
-  .geolonia-svg-map .prefecture:hover polygon, 
-  .geolonia-svg-map .prefecture:hover path { 
-    fill: #00ff99 !important; 
-  }
-
-  /* 沖縄を囲む枠線のデザイン */
-  .okinawa-inset { 
-    fill: none; 
-    stroke: #aaaaaa; 
-    stroke-width: 0.8; 
-    stroke-dasharray: 3; 
   }
 </style>
+
+
+
+
 
 # 2026年衆議院選挙
 <?xml version="1.0" encoding="utf-8"?>
