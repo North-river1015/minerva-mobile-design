@@ -4,6 +4,31 @@ layout: "home"
 ---
 
 
+<style>
+  /* SVG本体の設定：親要素の幅に合わせる */
+  .geolonia-svg-map {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* 中央寄せ */
+  }
+
+  /* 外側の枠の設定：はみ出し（スクロール）を防止 */
+  .mobile-only-map {
+    width: 100%;
+    overflow: hidden;
+    background-color: #f9f9f9; /* 任意：背景色をつけると範囲が分かりやすい */
+  }
+</style>
+
+<div class="mobile-only-map">
+  <svg class="geolonia-svg-map" viewBox="150 150 700 700" xmlns="http://www.w3.org/2000/svg">
+    <rect width="1000" height="1000" fill="none" /> <g class="svg-map">
+       </g>
+  </svg>
+</div>
+
+
 # 2026年衆議院選挙
 <?xml version="1.0" encoding="utf-8"?>
 <svg class="geolonia-svg-map" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
