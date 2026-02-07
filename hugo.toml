@@ -59,7 +59,6 @@ pagination.pagerSize = 1000
         [markup.goldmark.extensions.extras.superscript]
           enable = false
       [markup.goldmark.extensions.footnote]
-        backlinkHTML = '&#x21a9;&#xfe0e;'
         enable = true
         enableAutoIDPrefix = false
       [markup.goldmark.extensions.passthrough]
