@@ -4,24 +4,23 @@ layout: "home"
 ---
 
 <style>
-  /* 外枠：はみ出しを完全にカットし、横揺れを防止 */
   .mobile-only-map {
     width: 100%;
-    overflow: hidden;
+    overflow: hidden; /* 枠外を完全にカット */
     margin: 0;
     padding: 0;
-    background-color: #ffffff;
-    /* 横スワイプを禁止し、縦スクロールのみ許可する（モバイル対策） */
-    touch-action: pan-y;
+    touch-action: pan-y; /* 横揺れ防止 */
   }
-
-  /* 地図本体：親要素の幅100%に強制的に合わせる */
   .geolonia-svg-map {
-    width: 100%;
+    width: 100%; /* 画面幅いっぱいに広げる */
     height: auto;
     display: block;
   }
+  /* 地図の色など */
+  .geolonia-svg-map .prefecture { fill: #EEEEEE; stroke: #444444; stroke-width: 0.5; }
+  .geolonia-svg-map .prefecture:hover { fill: #00ff99 !important; }
 </style>
+
 
 
 
@@ -29,7 +28,7 @@ layout: "home"
 
 # 2026年衆議院選挙
 <?xml version="1.0" encoding="utf-8"?>
-<svg class="geolonia-svg-map" viewBox="300 0 1000 1000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg class="geolonia-svg-map" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
 
 <style type="text/css"> <![CDATA[
