@@ -4,31 +4,28 @@ layout: "home"
 ---
 
 
-
 <style>
   .mobile-only-map {
     width: 100%;
-    /* 高さを強制的に制限して、下のコンテンツを押し上げます */
-    max-height: 450px; 
+    /* 高さを固定せず、中の地図の比率(aspect-ratio)に任せる */
+    display: flex;
+    flex-direction: column;
     overflow: hidden;
-    margin-top: -20px; /* メニューとの隙間を詰める */
-    margin-bottom: -50px; /* 下の見出しとの隙間を詰める */
-
   }
 
   .geolonia-svg-map {
     width: 100%;
-    /* viewBoxで設定した比率を無視して、枠に合わせる設定 */
     height: auto;
+    /* 地図の上下にある「見えない余白」を最初から描画しない設定 */
     display: block;
   }
+
+  /* 見出し（# 2026...）との間隔を、文字1個分(1em)に固定する */
+  .mobile-only-map + h1, 
+  .mobile-only-map + p {
+    margin-top: 0.5em !important;
+  }
 </style>
-
-
-
-
-
-
 
 # 2026年衆議院選挙
 <?xml version="1.0" encoding="utf-8"?>
