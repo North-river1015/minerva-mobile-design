@@ -58,8 +58,7 @@ pagination.pagerSize = 1000
           enable = false
         [markup.goldmark.extensions.extras.superscript]
           enable = false
-      [markup.goldmark.extensions.footnote]
-        footnote = true
+
         
 
 
