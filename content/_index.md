@@ -13,7 +13,7 @@ layout: "home"
     overflow: hidden;
     margin-top: -20px; /* メニューとの隙間を詰める */
     margin-bottom: -50px; /* 下の見出しとの隙間を詰める */
-    background-color: #ffffff;
+
   }
 
   .geolonia-svg-map {
@@ -24,12 +24,6 @@ layout: "home"
   }
 </style>
 
-<div class="mobile-only-map">
-  <svg class="geolonia-svg-map" viewBox="320 180 430 500" xmlns="http://www.w3.org/2000/svg">
-    <g class="svg-map">
-       </g>
-  </svg>
-</div>
 
 
 
