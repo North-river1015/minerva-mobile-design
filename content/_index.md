@@ -29,10 +29,8 @@ layout: "home"
 
 # 2026年衆議院選挙
 <?xml version="1.0" encoding="utf-8"?>
-<svg class="geolonia-svg-map" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg class="geolonia-svg-map" viewBox="0 0 700 700" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
-<?xml version="1.0" encoding="utf-8"?>
-<svg class="geolonia-svg-map" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 
 <style type="text/css"> <![CDATA[
 .geolonia-svg-map .prefecture polygon, .geolonia-svg-map .prefecture path { fill: #EEEEEE; transition: fill .2s; } .geolonia-svg-map .prefecture:hover polygon, .geolonia-svg-map .prefecture:hover path { fill: #00ff99ff !important; }] 
