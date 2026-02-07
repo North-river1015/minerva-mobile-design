@@ -58,9 +58,11 @@ pagination.pagerSize = 1000
           enable = false
         [markup.goldmark.extensions.extras.superscript]
           enable = false
-      [markup.goldmark.extensions.footnote]
-        enable = true
-        enableAutoIDPrefix = false
+
+        
+
+
+        
       [markup.goldmark.extensions.passthrough]
         enable = false
         [markup.goldmark.extensions.passthrough.delimiters]
